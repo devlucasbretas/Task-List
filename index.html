@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-List | Gerencie Suas Tarefas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favic.png" type="image/x-icon">
+</head>
+<body>
+    
+    <section class="main-acitivity">
+        <div class="header">
+            <div class="dateDisplay">
+                <p id="data"></p>
+                <p id="mes"></p>
+            </div>
+        </div>
+        <div class="list">
+            <ul>
+            </ul>
+        </div>
+        <div class="add">
+            <input type="text" placeholder="Add new task" id="taskTxt">
+            <button id="add">+</button>
+            <button id="del"><i class="fas fa-trash-alt"></i></button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

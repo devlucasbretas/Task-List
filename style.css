@@ -1,0 +1,135 @@
+:root {
+    --bgcolor:linear-gradient(to right, rgb(170, 64, 202), rgb(119, 0, 255));
+    --bgdivs: rgb(185, 185, 197);
+    --sombra1: 5px 5px 30px rgba(46, 46, 46, 0.685);
+    --cor-primaria: #20324d;
+    --cor-secundaria: rgb(247, 247, 247);
+}
+
+body {
+    background: var(--bgcolor);
+}
+
+.main-acitivity {
+    margin: 30px auto;
+    width: 420px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bgdivs);
+    box-shadow: var(--sombra1);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header {
+    width: 420px;
+    height: 200px;
+    background: url(img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.list {
+    width: 420px;
+    height: 330px;
+}
+
+li {
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    width: 340px;
+    margin-top: 10px;
+    color: black;
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(113, 37, 211, 0.445);
+    font-family: 'Roboto', sans-serif;
+    color:rgb(68, 50, 170);
+}
+
+.add{
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#del {
+    background-color: rgb(206, 70, 70);
+    margin-left: 10px;
+}
+
+.add input {
+    width: 250px;
+    height: 30px;
+    margin: -10px;
+    border: none;
+    padding: 10px;
+}
+
+.add input:focus {
+    border: 2px solid rgb(129, 29, 175);
+    box-shadow: 2px 2px 5px rgba(149, 55, 192, 0.781);
+}
+
+.add button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: rgb(108, 37, 175);
+    font-size: 17pt;
+    color: white;
+}
+
+.dateDisplay {
+    font-size: 17pt;
+    margin-top: 160px;
+    margin-left: 10px;
+    color: rgb(224, 224, 224);
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dateDisplay p {
+    margin: 0px 5px
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    
+    body {
+        margin:0px;
+        padding: 0px;
+    }
+
+    .main-acitivity {
+        margin:0px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header {
+        width: 100vw;
+    }
+
+    .add {
+        width: 360px;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .list {
+        width: 350px;
+    }
+
+    li {
+        width: 310px;
+        margin-left: -8px;
+    }
+}
