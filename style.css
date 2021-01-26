@@ -112,6 +112,7 @@ li {
         margin:0px;
         width: 100vw;
         height: 100vh;
+        background-color: rgb(19, 19, 41);
     }
 
     .header {
@@ -124,6 +125,10 @@ li {
         margin-left: 10px;
     }
 
+    .add input {
+        height: 35px;
+    }
+
     .list {
         width: 350px;
     }
@@ -131,5 +136,9 @@ li {
     li {
         width: 310px;
         margin-left: -8px;
+        font-size: 15pt;
+        background-color: rgb(148, 155, 247);
+        color: rgb(44, 44, 44);
+        
     }
 }
